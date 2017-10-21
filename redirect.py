@@ -1,43 +1,42 @@
-import requests
-import sys
-import time
-import os
+#!/usr/bin/env python
+import requests,sys,time,os
+top = """
+ #################################################
+ # Open redirect Scanner for dummies like me :)  #
+ # by: ak1t4 (know.0nix@gmail.com)               #
+ #  twitter.com/knowledge_2014                   #
+ #  www.security-root.com                        #
+ #  contributor(s): @sxcurity                    #
+ #################################################
+    """
+
+def main():
+    os.system('clear')
+
+    print(top)
+
+    # Payloads example
+
+    #payload = '//www.google.com/%2F..'
+    #payload2 = '//www.yahoo.com//'
+    #payload3 = '//www.yahoo.com//%2F%2E%2E'
+
+    # first argument - file with subdomains
+
+    file = sys.argv[1]
+
+    # second argument - payload string
+
+    payload = sys.argv[2]
 
 
-os.system('clear')
-print "#################################################"
-print "# Open redirect Scanner for dummies like me :)  #"
-print "#  by ak1t4 (know.0nix@gmail.com)               #"
-print "#  twitter.com/knowledge_2014  		       #"
-print "#  www.security-root.com			       #"
-print "#################################################"
-print ""
-print "Use ./redirect.py [subdomains.file] [redirect-payload]"
-print "Example ./redirect.py uber.list '//yahoo.com/%2F..'"
 
-
-# Payloads example
-
-#payload = '//www.google.com/%2F..'
-#payload2 = '//www.yahoo.com//'
-#payload3 = '//www.yahoo.com//%2F%2E%2E'
-
-# first argument - file with subdomains
-
-file = sys.argv[1]
-
-# second argument - payload string
-
-payload = sys.argv[2]
-
-
-
-#open file with subdomains and iterates
+    #open file with subdomains and iterates
  
-with open(file) as f:
+    with open(file) as f:
 
 		print ""
-		print "Searching the ex-girlfriend target &  Holy Grial at [303 see others].."
+		print "Searching the ex-girlfriend target &  Holy Grail at [303 see others].."
 		print ""
 		time.sleep(4)
 
@@ -87,6 +86,10 @@ with open(file) as f:
 
                     except:
 
-                        print "quiting.."
+                        print "quitting.."
 
-
+try:
+	main()
+except IndexError:
+	print(" Usage: python "+sys.argv[0]+" [subdomains.file] [redirect.payload]\n")
+        print(" Example python "+sys.argv[0]+" uber.list '//yahoo.com/%2F..'\n")
