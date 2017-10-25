@@ -1,9 +1,8 @@
 # redirect.py
-UPDATED!  we add an awesome payloads list by https://github.com/cujanovic/Open-Redirect-Payloads
+UPDATED!  we add awesomes payloads list by https://github.com/cujanovic/Open-Redirect-Payloads
 
 Open redirect Scanner by Ak1t4 - https://hackerone.com/ak1t4
 (contributor(s): @sxcurity)
-
 
 Use ./redirect.py [subdomains.file] [redirect-payload]
 
