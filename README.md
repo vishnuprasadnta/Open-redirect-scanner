@@ -10,7 +10,7 @@ Use ./redirect.py [subdomains.file] [redirect-payload]
 Example ./redirect.py uber.list '//yahoo.com/%2F..'
 
 
-UPDATE:  (Now is not necesary indicate the payload we replace we an entire payloads list)
+UPDATE:  ((Now is not necessarily indicate the payload we replace we an entire payloads list)
 
 this is pretty awesome, now you can run 1 only command who search all subdomains in 1 file and inject unlimited Payloads from payloads.list
 
