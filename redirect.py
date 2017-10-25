@@ -5,7 +5,7 @@ top = """
  # Open redirect Scanner for dummies like me :)  #
  # by: ak1t4 (know.0nix@gmail.com)               #
  #  twitter.com/knowledge_2014                   #
- #  www.security-root.com                        #
+ #  hackerone.com/ak1t4                          #
  #  contributor(s): @sxcurity                    #
  #################################################
     """
@@ -16,7 +16,7 @@ def main():
     print(top)
 
     # Payloads example
-
+    # This is replaced with a payloads.list (a lot of amazing redirect payloads)
     #payload = '//www.google.com/%2F..'
     #payload2 = '//www.yahoo.com//'
     #payload3 = '//www.yahoo.com//%2F%2E%2E'
@@ -50,7 +50,7 @@ def main():
 
                         line2 = line.strip()
 
-                        line3 = 'http://' + line2 + payload
+                        line3 = 'https://' + line2 + payload
 
                         print line3
 
